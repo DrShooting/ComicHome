@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2772BEC3798835751C6B3DB1 /* libPods-ComicHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F2D45DD5568AE043BB4FE3 /* libPods-ComicHome.a */; };
+		D624F5F31D1D61C000C29CB3 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D624F5F21D1D61C000C29CB3 /* RootTabBarController.m */; };
+		D624F5F61D1D62F700C29CB3 /* ComicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D624F5F51D1D62F700C29CB3 /* ComicViewController.m */; };
+		D624F5F91D1D631600C29CB3 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D624F5F81D1D631600C29CB3 /* MineViewController.m */; };
+		D624F5FC1D1D631C00C29CB3 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D624F5FB1D1D631C00C29CB3 /* NewsViewController.m */; };
+		D624F5FF1D1D632300C29CB3 /* NorvelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D624F5FE1D1D632300C29CB3 /* NorvelViewController.m */; };
+		D658CC0B1D1EBE2800CB3BCD /* Comment.png in Resources */ = {isa = PBXBuildFile; fileRef = D658CC071D1EBE2800CB3BCD /* Comment.png */; };
+		D658CC0D1D1EBE2800CB3BCD /* History.png in Resources */ = {isa = PBXBuildFile; fileRef = D658CC091D1EBE2800CB3BCD /* History.png */; };
+		D658CC0E1D1EBE2800CB3BCD /* Download.png in Resources */ = {isa = PBXBuildFile; fileRef = D658CC0A1D1EBE2800CB3BCD /* Download.png */; };
+		D658CC141D1EBFFD00CB3BCD /* headerBackgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D658CC131D1EBFFD00CB3BCD /* headerBackgroundImage.jpg */; };
+		D658CC171D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D658CC161D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.m */; };
+		D658CC191D1ECD2400CB3BCD /* Subscription.png in Resources */ = {isa = PBXBuildFile; fileRef = D658CC181D1ECD2400CB3BCD /* Subscription.png */; };
+		D6D8AA9C1D1D5C9900F9A0A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AA9B1D1D5C9900F9A0A8 /* main.m */; };
+		D6D8AAA21D1D5C9900F9A0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AAA11D1D5C9900F9A0A8 /* ViewController.m */; };
+		D6D8AAA51D1D5C9900F9A0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D8AAA31D1D5C9900F9A0A8 /* Main.storyboard */; };
+		D6D8AAA71D1D5C9900F9A0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D8AAA61D1D5C9900F9A0A8 /* Assets.xcassets */; };
+		D6D8AAAA1D1D5C9900F9A0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D8AAA81D1D5C9900F9A0A8 /* LaunchScreen.storyboard */; };
+		D6D8AAC31D1D5E0B00F9A0A8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AAC21D1D5E0B00F9A0A8 /* BaseViewController.m */; };
+		D6D8AAC61D1D5E1500F9A0A8 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AAC51D1D5E1500F9A0A8 /* BaseTableViewController.m */; };
+		D6D8AAC91D1D5E3000F9A0A8 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AAC81D1D5E3000F9A0A8 /* BaseTabBarController.m */; };
+		D6D8AACC1D1D5E7C00F9A0A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8AACB1D1D5E7C00F9A0A8 /* AppDelegate.m */; };
+		D6F4A96C1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F4A96B1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62F2D45DD5568AE043BB4FE3 /* libPods-ComicHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C7DC3988EF69AE50B6E160 /* Pods-ComicHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicHome/Pods-ComicHome.debug.xcconfig"; sourceTree = "<group>"; };
+		97E2FC05681138E4E860CBB6 /* Pods-ComicHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicHome/Pods-ComicHome.release.xcconfig"; sourceTree = "<group>"; };
+		D624F5F11D1D61C000C29CB3 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		D624F5F21D1D61C000C29CB3 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		D624F5F41D1D62F700C29CB3 /* ComicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicViewController.h; sourceTree = "<group>"; };
+		D624F5F51D1D62F700C29CB3 /* ComicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicViewController.m; sourceTree = "<group>"; };
+		D624F5F71D1D631600C29CB3 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		D624F5F81D1D631600C29CB3 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		D624F5FA1D1D631C00C29CB3 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		D624F5FB1D1D631C00C29CB3 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		D624F5FD1D1D632300C29CB3 /* NorvelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NorvelViewController.h; sourceTree = "<group>"; };
+		D624F5FE1D1D632300C29CB3 /* NorvelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NorvelViewController.m; sourceTree = "<group>"; };
+		D624F6001D1D689B00C29CB3 /* EfficientDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EfficientDefine.h; sourceTree = "<group>"; };
+		D658CC071D1EBE2800CB3BCD /* Comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Comment.png; sourceTree = "<group>"; };
+		D658CC091D1EBE2800CB3BCD /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = History.png; sourceTree = "<group>"; };
+		D658CC0A1D1EBE2800CB3BCD /* Download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Download.png; sourceTree = "<group>"; };
+		D658CC131D1EBFFD00CB3BCD /* headerBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = headerBackgroundImage.jpg; sourceTree = "<group>"; };
+		D658CC151D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleToImageView.h"; sourceTree = "<group>"; };
+		D658CC161D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleToImageView.m"; sourceTree = "<group>"; };
+		D658CC181D1ECD2400CB3BCD /* Subscription.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Subscription.png; sourceTree = "<group>"; };
+		D6D8AA971D1D5C9900F9A0A8 /* ComicHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D8AA9B1D1D5C9900F9A0A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6D8AAA01D1D5C9900F9A0A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6D8AAA11D1D5C9900F9A0A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6D8AAA41D1D5C9900F9A0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6D8AAA61D1D5C9900F9A0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D8AAA91D1D5C9900F9A0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6D8AAAB1D1D5C9900F9A0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D8AAC11D1D5E0B00F9A0A8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D6D8AAC21D1D5E0B00F9A0A8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D6D8AAC41D1D5E1500F9A0A8 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		D6D8AAC51D1D5E1500F9A0A8 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		D6D8AAC71D1D5E3000F9A0A8 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		D6D8AAC81D1D5E3000F9A0A8 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		D6D8AACA1D1D5E7C00F9A0A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6D8AACB1D1D5E7C00F9A0A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6F4A96A1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
+		D6F4A96B1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6D8AA941D1D5C9900F9A0A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2772BEC3798835751C6B3DB1 /* libPods-ComicHome.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6CEECD81D9750A1238CB470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92C7DC3988EF69AE50B6E160 /* Pods-ComicHome.debug.xcconfig */,
+				97E2FC05681138E4E860CBB6 /* Pods-ComicHome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D658CC041D1EB9E800CB3BCD /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D658CC071D1EBE2800CB3BCD /* Comment.png */,
+				D658CC091D1EBE2800CB3BCD /* History.png */,
+				D658CC181D1ECD2400CB3BCD /* Subscription.png */,
+				D658CC0A1D1EBE2800CB3BCD /* Download.png */,
+				D658CC131D1EBFFD00CB3BCD /* headerBackgroundImage.jpg */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D6D8AA8E1D1D5C9900F9A0A8 = {
+			isa = PBXGroup;
+			children = (
+				D6D8AA991D1D5C9900F9A0A8 /* ComicHome */,
+				D6D8AA981D1D5C9900F9A0A8 /* Products */,
+				A6CEECD81D9750A1238CB470 /* Pods */,
+				DE8A9947A19FD3E3D2F9D84A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6D8AA981D1D5C9900F9A0A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AA971D1D5C9900F9A0A8 /* ComicHome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6D8AA991D1D5C9900F9A0A8 /* ComicHome */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AAB31D1D5DDA00F9A0A8 /* Classes */,
+				D6D8AAA01D1D5C9900F9A0A8 /* ViewController.h */,
+				D6D8AAA11D1D5C9900F9A0A8 /* ViewController.m */,
+				D6D8AAA31D1D5C9900F9A0A8 /* Main.storyboard */,
+				D6D8AAA61D1D5C9900F9A0A8 /* Assets.xcassets */,
+				D6D8AAA81D1D5C9900F9A0A8 /* LaunchScreen.storyboard */,
+				D6D8AAAB1D1D5C9900F9A0A8 /* Info.plist */,
+				D6D8AA9A1D1D5C9900F9A0A8 /* Supporting Files */,
+			);
+			path = ComicHome;
+			sourceTree = "<group>";
+		};
+		D6D8AA9A1D1D5C9900F9A0A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AA9B1D1D5C9900F9A0A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6D8AAB31D1D5DDA00F9A0A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AAB41D1D5DDA00F9A0A8 /* AppDelegate */,
+				D6D8AAB51D1D5DDA00F9A0A8 /* Marco */,
+				D6D8AAB61D1D5DDA00F9A0A8 /* Models */,
+				D6D8AAB71D1D5DDA00F9A0A8 /* Resources */,
+				D6D8AAB81D1D5DDA00F9A0A8 /* Scences */,
+				D6D8AABF1D1D5DDA00F9A0A8 /* ThirdParty */,
+				D6D8AAC01D1D5DDA00F9A0A8 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D6D8AAB41D1D5DDA00F9A0A8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AACA1D1D5E7C00F9A0A8 /* AppDelegate.h */,
+				D6D8AACB1D1D5E7C00F9A0A8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D6D8AAB51D1D5DDA00F9A0A8 /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marco;
+			sourceTree = "<group>";
+		};
+		D6D8AAB61D1D5DDA00F9A0A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6D8AAB71D1D5DDA00F9A0A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D658CC041D1EB9E800CB3BCD /* Mine */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6D8AAB81D1D5DDA00F9A0A8 /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AAB91D1D5DDA00F9A0A8 /* Base */,
+				D6D8AABE1D1D5DDA00F9A0A8 /* Root */,
+				D6D8AABA1D1D5DDA00F9A0A8 /* Comic */,
+				D6D8AABC1D1D5DDA00F9A0A8 /* News */,
+				D6D8AABD1D1D5DDA00F9A0A8 /* Norvel */,
+				D6D8AABB1D1D5DDA00F9A0A8 /* Mine */,
+			);
+			path = Scences;
+			sourceTree = "<group>";
+		};
+		D6D8AAB91D1D5DDA00F9A0A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8AAC11D1D5E0B00F9A0A8 /* BaseViewController.h */,
+				D6D8AAC21D1D5E0B00F9A0A8 /* BaseViewController.m */,
+				D6D8AAC41D1D5E1500F9A0A8 /* BaseTableViewController.h */,
+				D6D8AAC51D1D5E1500F9A0A8 /* BaseTableViewController.m */,
+				D6D8AAC71D1D5E3000F9A0A8 /* BaseTabBarController.h */,
+				D6D8AAC81D1D5E3000F9A0A8 /* BaseTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D6D8AABA1D1D5DDA00F9A0A8 /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				D624F5F41D1D62F700C29CB3 /* ComicViewController.h */,
+				D624F5F51D1D62F700C29CB3 /* ComicViewController.m */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		D6D8AABB1D1D5DDA00F9A0A8 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D624F5F71D1D631600C29CB3 /* MineViewController.h */,
+				D624F5F81D1D631600C29CB3 /* MineViewController.m */,
+				D6F4A9691D1E30DC005B3DD6 /* TwitterCover */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D6D8AABC1D1D5DDA00F9A0A8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D624F5FA1D1D631C00C29CB3 /* NewsViewController.h */,
+				D624F5FB1D1D631C00C29CB3 /* NewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D6D8AABD1D1D5DDA00F9A0A8 /* Norvel */ = {
+			isa = PBXGroup;
+			children = (
+				D624F5FD1D1D632300C29CB3 /* NorvelViewController.h */,
+				D624F5FE1D1D632300C29CB3 /* NorvelViewController.m */,
+			);
+			path = Norvel;
+			sourceTree = "<group>";
+		};
+		D6D8AABE1D1D5DDA00F9A0A8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D624F5F11D1D61C000C29CB3 /* RootTabBarController.h */,
+				D624F5F21D1D61C000C29CB3 /* RootTabBarController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D6D8AABF1D1D5DDA00F9A0A8 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		D6D8AAC01D1D5DDA00F9A0A8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D624F6001D1D689B00C29CB3 /* EfficientDefine.h */,
+				D658CC151D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.h */,
+				D658CC161D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D6F4A9691D1E30DC005B3DD6 /* TwitterCover */ = {
+			isa = PBXGroup;
+			children = (
+				D6F4A96A1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.h */,
+				D6F4A96B1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.m */,
+			);
+			path = TwitterCover;
+			sourceTree = "<group>";
+		};
+		DE8A9947A19FD3E3D2F9D84A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62F2D45DD5568AE043BB4FE3 /* libPods-ComicHome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6D8AA961D1D5C9900F9A0A8 /* ComicHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D8AAAE1D1D5C9900F9A0A8 /* Build configuration list for PBXNativeTarget "ComicHome" */;
+			buildPhases = (
+				EE49908AFD0A48D441ABA426 /* 📦 Check Pods Manifest.lock */,
+				D6D8AA931D1D5C9900F9A0A8 /* Sources */,
+				D6D8AA941D1D5C9900F9A0A8 /* Frameworks */,
+				D6D8AA951D1D5C9900F9A0A8 /* Resources */,
+				1CCE1BE6A6BA1B4F40B3FCBD /* 📦 Embed Pods Frameworks */,
+				FF20AB09588A022974F37616 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComicHome;
+			productName = ComicHome;
+			productReference = D6D8AA971D1D5C9900F9A0A8 /* ComicHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6D8AA8F1D1D5C9900F9A0A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "王海";
+				TargetAttributes = {
+					D6D8AA961D1D5C9900F9A0A8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UY8LR5UBVF;
+					};
+				};
+			};
+			buildConfigurationList = D6D8AA921D1D5C9900F9A0A8 /* Build configuration list for PBXProject "ComicHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6D8AA8E1D1D5C9900F9A0A8;
+			productRefGroup = D6D8AA981D1D5C9900F9A0A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6D8AA961D1D5C9900F9A0A8 /* ComicHome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6D8AA951D1D5C9900F9A0A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D658CC191D1ECD2400CB3BCD /* Subscription.png in Resources */,
+				D6D8AAAA1D1D5C9900F9A0A8 /* LaunchScreen.storyboard in Resources */,
+				D6D8AAA71D1D5C9900F9A0A8 /* Assets.xcassets in Resources */,
+				D658CC0D1D1EBE2800CB3BCD /* History.png in Resources */,
+				D658CC141D1EBFFD00CB3BCD /* headerBackgroundImage.jpg in Resources */,
+				D658CC0B1D1EBE2800CB3BCD /* Comment.png in Resources */,
+				D6D8AAA51D1D5C9900F9A0A8 /* Main.storyboard in Resources */,
+				D658CC0E1D1EBE2800CB3BCD /* Download.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CCE1BE6A6BA1B4F40B3FCBD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComicHome/Pods-ComicHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE49908AFD0A48D441ABA426 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF20AB09588A022974F37616 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComicHome/Pods-ComicHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6D8AA931D1D5C9900F9A0A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D624F5F31D1D61C000C29CB3 /* RootTabBarController.m in Sources */,
+				D658CC171D1EC3CD00CB3BCD /* UIImage+ScaleToImageView.m in Sources */,
+				D6D8AAA21D1D5C9900F9A0A8 /* ViewController.m in Sources */,
+				D624F5F61D1D62F700C29CB3 /* ComicViewController.m in Sources */,
+				D6F4A96C1D1E30DC005B3DD6 /* UIScrollView+TwitterCover.m in Sources */,
+				D624F5F91D1D631600C29CB3 /* MineViewController.m in Sources */,
+				D624F5FF1D1D632300C29CB3 /* NorvelViewController.m in Sources */,
+				D6D8AAC31D1D5E0B00F9A0A8 /* BaseViewController.m in Sources */,
+				D6D8AACC1D1D5E7C00F9A0A8 /* AppDelegate.m in Sources */,
+				D6D8AA9C1D1D5C9900F9A0A8 /* main.m in Sources */,
+				D624F5FC1D1D631C00C29CB3 /* NewsViewController.m in Sources */,
+				D6D8AAC91D1D5E3000F9A0A8 /* BaseTabBarController.m in Sources */,
+				D6D8AAC61D1D5E1500F9A0A8 /* BaseTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6D8AAA31D1D5C9900F9A0A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D8AAA41D1D5C9900F9A0A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6D8AAA81D1D5C9900F9A0A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D8AAA91D1D5C9900F9A0A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6D8AAAC1D1D5C9900F9A0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6D8AAAD1D1D5C9900F9A0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6D8AAAF1D1D5C9900F9A0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C7DC3988EF69AE50B6E160 /* Pods-ComicHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComicHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanou.sajklfjsldkfjsdkfklsflddwooshs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D6D8AAB01D1D5C9900F9A0A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E2FC05681138E4E860CBB6 /* Pods-ComicHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComicHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanou.sajklfjsldkfjsdkfklsflddwooshs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6D8AA921D1D5C9900F9A0A8 /* Build configuration list for PBXProject "ComicHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D8AAAC1D1D5C9900F9A0A8 /* Debug */,
+				D6D8AAAD1D1D5C9900F9A0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D8AAAE1D1D5C9900F9A0A8 /* Build configuration list for PBXNativeTarget "ComicHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D8AAAF1D1D5C9900F9A0A8 /* Debug */,
+				D6D8AAB01D1D5C9900F9A0A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6D8AA8F1D1D5C9900F9A0A8 /* Project object */;
+}
