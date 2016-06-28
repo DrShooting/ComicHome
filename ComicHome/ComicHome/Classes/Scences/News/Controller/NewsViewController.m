@@ -8,7 +8,6 @@
 
 #import "NewsViewController.h"
 #import "MyScrollView.h"
-#import "NewsView.h"
 #import "NetWorkRequestManager.h"
 #import "NewsModel.h"
 #import "CH_URL.h"
@@ -26,7 +25,7 @@
 //存放轮播图数据的数据
 @property (nonatomic, strong)NSMutableArray *allNewsArray;
 
-@property (nonatomic, strong)NewsView *newsView;
+
 
 @property (nonatomic, strong)NewsTableViewCell *newsTableViewCell;
 
@@ -38,11 +37,7 @@
 
 @implementation NewsViewController
 
-- (void)loadView {
-    self.newsView = [[NewsView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.view = self.newsView;
-    
-}
+
 
 
 
@@ -54,7 +49,7 @@
     //注册 cell
     [self addTable];
     //解析数据
-    [self requestData];
+//    [self requestData];
     
     _model = [[NewsModel alloc] init];
     
@@ -82,7 +77,7 @@
     
     MyScrollView *myScrollView = [[MyScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
     [myScrollView setImagePathsInBundle:self.imageNames];
-    [self.newsView.tableView addSubview:myScrollView];
+
     [myScrollView setAutoRunEnableWithInterval:3];
     myScrollView.playDirection = Right;
     myScrollView.timeInterval = 3;
@@ -93,49 +88,48 @@
 - (void)addTable {
     
     // 设置数据源代理(用于处理数据)
-    self.newsView.tableView.dataSource = self;
+
     
     // 用于显示视图相关内容
-    self.newsView.tableView.delegate = self;
+
     
     // 注册cell
-    [self.newsView.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"newsCell"];
     
 }
 
 //解析数据
-- (void)requestData {
-    __weak typeof(self)weakSelf = self;
-    [NetWorkRequestManager requestType:GET urlString:CH_URL_SHUFFLING prama:nil success:^(id data) {
-        NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        NSArray *allDataArray = dic[@"data"];
-        for (NSDictionary *dict in allDataArray) {
-//            NewsModel *newsModel = [[NewsModel alloc] init];
-            [_model setValuesForKeysWithDictionary:dict];
-            [weakSelf.allNewsArray addObject:_model];
-            
-            // 可以将数据通过时间进行排序
-            
-            [_allNewsArray sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-                NewsModel *newsModel1 = (NewsModel *)obj1;
-                NewsModel *newsModel2 = (NewsModel *)obj2;
-                //                    return [newsModel2.pubdate newsModel1.pubdate];
-                return [newsModel2.Id compare:newsModel1.Id];
-            }];
-        }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //            // 刷新页面
-            [weakSelf.newsView.tableView reloadData];
-            //            // 隐藏
-            //            [weakSelf hideGifView];
-            
-        });
-    } fail:^(NSError *error) {
-        NSLog(@"请求数据失败");
-    }];
-    
-}
+//- (void)requestData {
+//    __weak typeof(self)weakSelf = self;
+//    [NetWorkRequestManager requestType:GET urlString:CH_URL_SHUFFLING prama:nil success:^(id data) {
+//        NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+//        NSArray *allDataArray = dic[@"data"];
+
+//        for (NSDictionary *dict in allDataArray) {
+////            NewsModel *newsModel = [[NewsModel alloc] init];
+//            [_model setValuesForKeysWithDictionary:dict];
+//            [weakSelf.allNewsArray addObject:_model];
+//            
+//            // 可以将数据通过时间进行排序
+//            
+//            [_allNewsArray sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+//                NewsModel *newsModel1 = (NewsModel *)obj1;
+//                NewsModel *newsModel2 = (NewsModel *)obj2;
+//                //                    return [newsModel2.pubdate newsModel1.pubdate];
+////                return [newsModel2.Id compare:newsModel1.Id];
+//            }];
+//        }
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            //            // 刷新页面
+//            //            // 隐藏
+//            //            [weakSelf hideGifView];
+//            
+//        });
+//    } fail:^(NSError *error) {
+//        NSLog(@"请求数据失败");
+//    }];
+//    
+//}
 
 
 
@@ -169,7 +163,8 @@
         
 
 //        [cell.imageView sd_setImageWithURL:model.pic_url];
-        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic_url]];
+//        [cell.imageView sd_setImageWithURL:[NSURL URLWithString:_model.pic_url]];
+        
         
         return cell;
     }
@@ -186,11 +181,53 @@
 }
 
 
+//取消点击效果
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+
+//// 设置头标题
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    
+//    return @"头标题";
+//}
+//
+//// 设置未尾标题
+//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+//    return @"尾标题";
+//}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//设置头标题高度
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+        return 10;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0;
+}
+
+
+//返回 view
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+
+
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
+    view.backgroundColor = [UIColor cyanColor];
+    return view;
+}
+
 
 /*
  #pragma mark - Navigation

@@ -16,6 +16,8 @@
 // 我
 #import "MineViewController.h"
 
+#import "NewssViewController.h"
+
 @interface RootTabBarController ()
 
 @end
@@ -43,7 +45,7 @@
     // 漫画
     [self addOneChildViewController:[[ComicViewController alloc] init] title:@"漫画" normalImage:nil selectedImage:nil];
     // 新闻
-    [self addOneChildViewController:[[NewsViewController alloc] init] title:@"新闻" normalImage:nil selectedImage:nil];
+    [self addOneChildViewController:[[NewssViewController alloc] init] title:@"新闻" normalImage:nil selectedImage:nil];
     // 小说
     [self addOneChildViewController:[[NorvelViewController alloc] init] title:@"小说" normalImage:nil selectedImage:nil];
     // 我的
