@@ -2,7 +2,7 @@
 //  NewsViewController.h
 //  ComicHome
 //
-//  Created by lanou3g on 16/6/24.
+//  Created by 高杰 on 16/6/27.
 //  Copyright © 2016年 王海. All rights reserved.
 //
 
